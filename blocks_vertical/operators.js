@@ -380,7 +380,7 @@ Blockly.Blocks['operator_return'] = {
         }
       ],
       "category": Blockly.Categories.operators,
-      "extensions": ["colours_operators", "output_string"]
+      "extensions": ["colours_operators", "shape_statement"]
     });
   }
 };
@@ -471,6 +471,20 @@ Blockly.Blocks['operator_mod'] = {
           "name": "NUM2"
         }
       ],
+      "category": Blockly.Categories.operators,
+      "extensions": ["colours_operators", "output_number"]
+    });
+  }
+};
+
+Blockly.Blocks['operator_pie'] = {
+  /**
+   * Block for rounding a numbers.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.OPERATORS_PIE,
       "category": Blockly.Categories.operators,
       "extensions": ["colours_operators", "output_number"]
     });
