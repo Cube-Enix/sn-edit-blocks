@@ -172,6 +172,30 @@ Blockly.Blocks['operator_lt'] = {
   }
 };
 
+Blockly.Blocks['operator_lte'] = {
+  /**
+   * Block for less than comparator.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.OPERATORS_LT,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "OPERAND1"
+        },
+        {
+          "type": "input_value",
+          "name": "OPERAND2"
+        }
+      ],
+      "category": Blockly.Categories.operators,
+      "extensions": ["colours_operators", "output_boolean"]
+    });
+  }
+};
+
 Blockly.Blocks['operator_equals'] = {
   /**
    * Block for equals comparator.
@@ -197,6 +221,30 @@ Blockly.Blocks['operator_equals'] = {
 };
 
 Blockly.Blocks['operator_gt'] = {
+  /**
+   * Block for greater than comparator.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.OPERATORS_GT,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "OPERAND1"
+        },
+        {
+          "type": "input_value",
+          "name": "OPERAND2"
+        }
+      ],
+      "category": Blockly.Categories.operators,
+      "extensions": ["colours_operators", "output_boolean"]
+    });
+  }
+};
+
+Blockly.Blocks['operator_gte'] = {
   /**
    * Block for greater than comparator.
    * @this Blockly.Block
@@ -309,6 +357,26 @@ Blockly.Blocks['operator_join'] = {
         {
           "type": "input_value",
           "name": "STRING2"
+        }
+      ],
+      "category": Blockly.Categories.operators,
+      "extensions": ["colours_operators", "output_string"]
+    });
+  }
+};
+
+Blockly.Blocks['operator_return'] = {
+  /**
+   * Block for string join operator.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.OPERATORS_RETURN,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "STRING"
         }
       ],
       "category": Blockly.Categories.operators,
