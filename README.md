@@ -1,10 +1,10 @@
-# TurboWarp/scratch-blocks
+# SN-Edit Blocks
+<!--
 
 ## Playgrounds
 
  - **Vertical blocks**: https://turbowarp.github.io/scratch-blocks/tests/vertical_playground_compressed.html
-
-<!--
+ 
 #### Scratch Blocks is a library for building creative computing interfaces.
 [![Build Status](https://travis-ci.org/LLK/scratch-blocks.svg?branch=develop)](https://travis-ci.org/LLK/scratch-blocks)
 [![Dependency Status](https://david-dm.org/LLK/scratch-blocks.svg)](https://david-dm.org/LLK/scratch-blocks)
